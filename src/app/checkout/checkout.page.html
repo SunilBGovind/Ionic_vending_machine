@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@next/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core@next/dist/ionic/ionic.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core@next/css/ionic.bundle.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title> Vending Machine </title>
+  </head>
+  <ion-app>
+    <ion-content fullscreen>    
+      <ion-header translucent>
+        <ion-toolbar color="dark">
+        <div class= "overlay"></div>
+        <nav>
+          <h2>Vending Machine</h2>
+          <ul>
+            <li><a href="home">Home</a> </li>
+            <li class = "checkout">
+              <a href="checkout">
+                <ion-icon name = "cart"></ion-icon><span>0</span>
+              </a></li>
+          </ul>
+        </nav>
+      </ion-toolbar>
+      </ion-header> 
+      <div class="products-container">
+        <div class="product-header">
+            <h5 class="product-title">PRODUCT</h5>
+            <h5 class="price">PRICE</h5>
+            <h5 class="quantity" >QUANTITY</h5>
+            <h5 class="total">TOTAL</h5>
+        </div>
+        <div class="products"> 
+
+        </div>
+        <!-- <ion-card class="welcome-card">
+          <ion-card-header>
+            <ion-card-subtitle>Get Started</ion-card-subtitle>
+            <ion-card-title>Razorpay Sample</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-button expand="full" color="success" (click)="payWithRazor()">Pay with RazorPay</ion-button>
+          </ion-card-content>
+        </ion-card> -->
+
+      </div>
+    </ion-content>
+  </ion-app>
+</html>

@@ -1,20 +1,110 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@next/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core@next/dist/ionic/ionic.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core@next/css/ionic.bundle.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title> Vending Machine </title>
+  </head>
+  <ion-app>
+    <ion-content fullscreen>    
+      <ion-header translucent>
+        <ion-toolbar color="dark">
+        <div class= "overlay"></div>
+        <nav>
+          <h2>Vending Machine</h2>
+          <ul>
+            <li><a href="home">Home</a> </li>
+            <li class = "checkout">
+              <a href="checkout">
+                <ion-icon name = "cart" style="width: 20px;"></ion-icon><span>0</span>
+              </a></li>
+          </ul>
+        </nav>
+      </ion-toolbar>
+      </ion-header> 
+    <div class="container">
+      <!-- Rack 1-->
+      <div class="image">
+        <img src="assets/images/kurkure_masala_munch.jpg" alt="snack1" style = "height: 200px;"> 
+        <h5> Kurkure Masala Munch </h5>
+        <i class="fa fa-rupee">. 10</i>
+        <a class="add-cart cart1" (click) = "myFunction()" >Add Cart</a>
+      </div>
+      <div class="image">
+        <img src="assets/images/kurkure_chilli_chatka.jpg" alt="snack1" style = "height: 200px;"> 
+        <h5> Kurkure Chili Chataka </h5>
+        <i class="fa fa-rupee">. 15</i>
+        <a class="add-cart cart2" (click) = "myFunction()" >Add Cart</a>
+      </div>
+      <div class="image">
+        <img src="assets/images/kurkure_gazab_golmaal.jpg" alt="snack1" style = "height: 200px;"> 
+        <h5> Kurkure Gazab Golmaal </h5>
+        <i class="fa fa-rupee">. 20</i>
+        <a class="add-cart cart3" (click) = "myFunction()" >Add Cart</a>
+      </div>
+      <div class="image">
+        <img src="assets/images/kurkure_triangles.jpg" alt="snack1" style = "height: 200px;"> 
+        <h5> Kurkure Traingles </h5>
+        <i class="fa fa-rupee">. 25</i>
+          <a class="add-cart cart4 " (click) = "myFunction()">Add Cart</a>
+      </div>  <br>
+      <!-- Rack 2-->
+      <div class="image">
+        <img src="assets/images/lays_american.jpg" alt="snack1" style = "height: 200px;"> 
+        <h5> Lay's American Style Cream & Onion </h5>
+        <i class="fa fa-rupee">. 20</i>
+          <a class="add-cart cart4 " (click) = "myFunction()">Add Cart</a>
+      </div>  
+      <div class="image">
+        <img src="assets/images/lays_classic.jpg" alt="snack1" style = "height: 200px;"> 
+        <h5> Lay's Classic </h5>
+        <i class="fa fa-rupee">. 20</i>
+          <a class="add-cart cart4 " (click) = "myFunction()">Add Cart</a>
+      </div> 
+      <div class="image">
+        <img src="assets/images/lays_salt.jpg" alt="snack1" style = "height: 200px;"> 
+        <h5> Lay's Salt & Vinegar Flavored </h5>
+        <i class="fa fa-rupee">. 20</i>
+          <a class="add-cart cart4 " (click) = "myFunction()">Add Cart</a>
+      </div>
+      <div class="image">
+        <img src="assets/images/lays_tomoto.jpg" alt="snack1" style = "height: 200px;"> 
+        <h5> Lay's Tomoto Tango </h5>
+        <i class="fa fa-rupee">. 20</i>
+          <a class="add-cart cart4 " (click) = "myFunction()">Add Cart</a>
+      </div> <br>
+      <!-- Rack 3-->
+      <div class="image">
+        <img src="assets/images/coca_cola_250ml.jpg" alt="snack1" style = "height: 200px;"> 
+        <h5> Coca-Cola (250ml) </h5>
+        <i class="fa fa-rupee">. 20</i>
+          <a class="add-cart cart4 " (click) = "myFunction()">Add Cart</a>
+      </div>  
+      <div class="image">
+        <img src="assets/images/mirinda_250ml.jpg" alt="snack1" style = "height: 200px;"> 
+        <h5> Mirinda (250ml) </h5>
+        <i class="fa fa-rupee">. 20</i>
+          <a class="add-cart cart4 " (click) = "myFunction()">Add Cart</a>
+      </div> 
+      <div class="image">
+        <img src="assets/images/pepsi_250ml.jpg" alt="snack1" style = "height: 200px;"> 
+        <h5> Pepsi (250ml) </h5>
+        <i class="fa fa-rupee">. 20</i>
+          <a class="add-cart cart4 " (click) = "myFunction()">Add Cart</a>
+      </div>
+      <div class="image">
+        <img src="assets/images/7up_250ml.jpg" alt="snack1" style = "height: 200px;"> 
+        <h5> 7up (250ml) </h5>
+        <i class="fa fa-rupee">. 20</i>
+          <a class="add-cart cart4 " (click) = "myFunction()">Add Cart</a>
+      </div> 
+    </div>
+    </ion-content>
+    
+  </ion-app>
+</html>

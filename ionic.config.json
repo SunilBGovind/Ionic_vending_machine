@@ -1,7 +1,8 @@
 {
   "name": "vendingMachine",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular"
 }
